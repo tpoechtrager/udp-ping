@@ -27,7 +27,7 @@ $(SERVER): $(SERVER_OBJ)
 
 # Compile client source
 client.o: $(CLIENT_SRC)
-	$(CXX) $(CXXFLAGS) -c $(CLIENT_SRC)
+	$(CXX) $(CXXFLAGS) -pthread -c $(CLIENT_SRC)
 
 # Compile server source
 server.o: $(SERVER_SRC)
